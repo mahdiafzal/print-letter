@@ -1,0 +1,396 @@
+.official-letter-container p {
+    margin-bottom: 3px;
+}
+
+.official-letter-container {
+    background-image: url(../../assets/images/letter/letterHeader.jpg) !important;
+    background-position-x: right !important;
+    background-position-y: 20px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    padding: 90px 15px 0;
+    position: relative;
+}
+
+.official-letter-body {
+    padding: 40px 70px 0 55px;
+}
+
+    .official-letter-body h1 {
+        margin-bottom: 12px;
+    }
+
+    .official-letter-body h2 {
+        margin-bottom: 10px;
+    }
+
+.official-letter-footer {
+    background: url(../../assets/images/letter/letterFooter.jpg) no-repeat 0 100% !important;
+    position: absolute;
+    bottom: 20px;
+    right: -10px;
+    width: 790px;
+    height: 150px;
+}
+
+    .official-letter-footer > img {
+        width: 775px;
+    }
+
+.official-letter-head {
+    height: 65px;
+}
+
+    .official-letter-head > img {
+        width: 765px;
+        margin-right: -15px;
+    }
+
+    .official-letter-head table {
+        position: relative !important;
+        z-index: 1 !important;
+        margin-left: 55px;
+    }
+
+    .official-letter-head tr td {
+        color: #626c9e !important;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 2em;
+    }
+
+        .official-letter-head tr td > span span {
+            color: #626c9e !important;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 2em;
+        }
+
+        .official-letter-head tr td:first-child {
+            width: 50px;
+        }
+
+.official-letter-god {
+    margin-top: 5px;
+}
+
+.official-letter-body table {
+    min-height: 200px;
+}
+
+    .official-letter-body table tr th,
+    .official-letter-body table tr td {
+        width: 15%;
+    }
+
+        .official-letter-body table tr th:last-child,
+        .official-letter-body table tr td:last-child {
+            width: 55%;
+        }
+
+    .official-letter-body table tr th,
+    .official-letter-body table tr td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 6px 8px;
+    }
+
+
+.official-letter-signature-container-left {
+    display: inline-block;
+    width: 300px;
+    margin-bottom: 20px;
+    float: left;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.official-letter-signature-container-right {
+    display: inline-block;
+    width: 300px;
+    margin-bottom: 20px;
+    float: right;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.official-letter-signature-sign {
+    max-width: 150px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.official-letter-signature-sign-small {
+    max-width: 100px;
+    margin-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.official-letter-head table {
+    margin-right: auto;
+    border: 0 none;
+    margin-bottom: 10px;
+}
+
+.official-letter-god {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media screen {
+
+    .official-letter-container {
+        width: 210mm;
+        height: 297mm;
+        /* float: right; */
+    }
+
+        .official-letter-container table > thead > tr {
+            height: 40px !important;
+        }
+
+    .print-link {
+        position: relative;
+        margin-left: 0;
+        margin-top: -85px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+@media print {
+    .printPage {
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
+
+    .official-letter-container {
+        width: 210mm;
+        height: 297mm;
+        border: none;
+        direction: rtl;
+        position: relative;
+    }
+
+        .official-letter-container table > thead > tr {
+            height: 40px !important;
+        }
+
+    .print-link {
+        display: none;
+    }
+}
+
+
+/* General */
+.ph-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.pv-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pv-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.text-left {
+    text-align: right !important;
+}
+
+.text-right {
+    text-align: left !important;
+}
+
+.block-inline {
+    display: inline-block !important;
+}
+
+/* Contact Themplate */
+
+.official-letter-container.contractHeader {
+    background-image: none !important;
+    background-position-x: right !important;
+    background-position-y: 0 !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    padding: 90px 15px 0;
+    position: relative;
+}
+
+.contractHeader .official-letter-head {
+    height: 108px;
+}
+
+    .contractHeader .official-letter-head table {
+        position: relative !important;
+        z-index: 1 !important;
+        margin: 0 25px;
+        float: right;
+    }
+
+    .contractHeader .official-letter-head tr td {
+        color: #000 !important;
+        border: 1px solid #000;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+        .contractHeader .official-letter-head tr td:first-child {
+            width: 20%;
+        }
+
+        .contractHeader .official-letter-head tr td:nth-child(2) {
+            width: 50%;
+        }
+
+        .contractHeader .official-letter-head tr td:last-child {
+            width: 30%;
+            padding: 3px 5px;
+            line-height: 1.8em;
+            text-align: right !important;
+        }
+
+    .contractHeader .official-letter-head.official-letter-condition-head tr td:last-child {
+        width: 30%;
+        padding: 0;
+        line-height: 2em;
+    }
+
+        .contractHeader .official-letter-head.official-letter-condition-head tr td:last-child .letterConditionTitle {
+            font-size: 13px;
+            padding: 0 5px;
+            text-align: right;
+        }
+
+.letterLogo {
+    vertical-align: text-top;
+}
+
+.letterConditionLogo {
+    padding: 10px 0;
+    vertical-align: text-top;
+}
+
+.contractHeader .letterTitle {
+    padding: 5px 0;
+}
+
+.contractHeader .letterSubTitle {
+    border-top: 1px solid #000;
+    padding: 5px 0;
+}
+
+.contractHeader .letterConditionTitle {
+    font-size: 12px;
+    padding: 0;
+}
+
+.contractHeader .letterConditionTSubTitle {
+    border-top: 1px solid #000;
+    padding: 25px 0;
+}
+
+.contractHeader .letterConditionDate {
+    border-top: 1px solid #000;
+    font-size: 13px;
+    padding: 25px 5px;
+    text-align: right;
+}
+
+.contractHeader .official-letter-body {
+    border: 1px solid #000;
+    border-top: none;
+    padding: 5px 8px;
+    margin: 0 26px;
+}
+
+    .contractHeader .official-letter-body p,
+    .contractHeader .official-letter-body div {
+        font-size: 12px;
+        line-height: 1.8em;
+    }
+
+.contractHeader .articleContract {
+    font-weight: 600;
+    margin: 6px 0 0;
+}
+
+.contractHeader .articleContract__title {
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.contractHeader .articleContract__researcher {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.contractHeader .official-letter-signature-container {
+    font-weight: 500;
+}
+
+/* Wage Themeplate */
+
+.official-letter-container.no__image {
+    background-image: none !important;
+    background-position-x: right !important;
+    background-position-y: 0 !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    padding: 90px 50px 0;
+    position: relative;
+}
+
+.wage .print-link {
+    margin-left: -35px;
+}
+
+.wage__box {
+    border: 1px solid #000;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+
+.wage__header__box {
+    position: relative;
+}
+
+.wage__title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+.wage__subTitle {
+    font-size: 14px;
+}
+
+.wage__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wage__text {
+    margin-bottom: 6px !important;
+}
