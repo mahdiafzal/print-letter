@@ -87,9 +87,15 @@
 }
 
 @media print {
+    @media print {
+        @page {
+            size: landscape
+        }
+    }
     .print-link {
         display: none;
     }
+
     body {
         position: relative;
         font-family: IRANSans, iranyekan, vazir;
@@ -101,6 +107,7 @@
         padding: 0;
         z-index: 0;
     }
+
     .cheque__photo {
         position: absolute;
         top: 240px;
@@ -114,6 +121,7 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     .cheque__date__digit {
         position: absolute;
         top: 262px;
@@ -124,6 +132,7 @@
         text-align: right;
         direction: rtl;
     }
+
     .cheque__date__letters {
         position: absolute;
         top: 282px;
@@ -134,6 +143,7 @@
         text-align: right;
         direction: rtl;
     }
+
     .cheque__amount__digit {
         position: absolute;
         top: 310px;
@@ -144,6 +154,7 @@
         text-align: left;
         direction: rtl;
     }
+
     .cheque__amount__letters {
         position: absolute;
         top: 355px;
@@ -154,6 +165,7 @@
         text-align: right;
         direction: rtl;
     }
+
     .cheque__payTo {
         position: absolute;
         top: 400px;
