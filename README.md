@@ -1,1 +1,3 @@
-print-letter themplat A4
+print template A4
+
+print template cheque
